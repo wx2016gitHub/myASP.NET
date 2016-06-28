@@ -1,0 +1,172 @@
+﻿body { 
+     background-image: -webkit-radial-gradient(circle, antiquewhite, white );
+     background-image: radial-gradient(circle, antiquewhite, white );
+
+}
+
+.MyTitle{
+    background:-webkit-linear-gradient(top,aqua, white);
+    background:linear-gradient(to top,aqua, white);
+    color:darkblue;
+    padding:20px 30px 10px 30px;
+}
+.MyTitle >h4{
+    color:darkred;  
+
+}
+.navbar {
+     background-color:darkgreen ;  
+}
+
+ 
+#MyFrame {
+  display: inline-block;
+  display: block;
+  height: 180px;
+  max-width: 100%;
+  padding: 10px;
+  line-height: 1.428571429;
+  background:-webkit-linear-gradient(left,gold, white);
+  background:linear-gradient(to left,gold, white);
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        
+}
+
+#MyFrame > #pic {
+  position:absolute; 
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding-top: 5px;
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+#topic {
+    position:relative;
+    margin-right: 30px;
+    padding-left: 30px;
+    float: left;
+    left:210px;
+    max-width: 70%;
+} 
+ 
+#topic > h5 {
+    margin: 10px 10px;
+    color: darkblue;
+    font-weight: bold;
+}
+#topic > #text {
+    margin: 10px 10px;
+    text-align: justify;
+    color:darkgreen;
+    font-size:11px;
+    max-width: 95%;
+    max-height: 110px;
+    overflow:hidden;
+}
+ 
+h1{
+    color:darkred;
+}
+
+th, dt, label { 
+    color: darkgreen;
+
+}
+
+#myAbout {
+    background: -webkit-linear-gradient(top, pink,white );
+    background: linear-gradient(to top,pink,white );
+    padding: 40px;
+    color: chocolate;
+}
+#myAbout > h3 {
+    color:darkred;
+}
+#myAbout > h3 >span {
+   color:gold;
+   font-size:11px;
+   padding-left:30px;
+}
+
+#myAbout > h5{
+    font-size:11px;
+}
+#pretty1 { 
+     position:absolute;  
+     left:40px; 
+     top:65px; 
+     width:60px;
+     height:60px;
+     border-radius:30px; 
+     animation: dance1Y 3s ease -1s infinite normal;
+}
+@keyframes dance1Y {    
+    from {  transform: rotateY(180deg);  opacity:0; }
+    to   {  transform: rotateY(0deg); opacity:1 ; }
+ }
+
+#pretty2 { 
+     position:absolute;  
+     left:40px; 
+     top:65px; 
+     width:60px;
+     height:60px;
+     border-radius:30px; 
+     animation: dance2Y 3s ease -1s infinite normal;
+}
+@keyframes dance2Y {    
+    from {  transform: rotateY(0deg);  opacity:1; }
+    to   {  transform: rotateY(180deg); opacity:0 ;}
+ }
+
+#picInBottom {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            float: left;
+            bottom: 0;
+            height: 90px;
+}
+
+audio:not([controls]){
+      display:none;
+      height:0;
+}
+
+#p01 { position:absolute; float:left;}
+#p02 { position:absolute; float:left;}
+#p03 { position:absolute; float:left;}
+#p04 { position:absolute; float:left;}
+#p05 { position:absolute; float:left;}
+#p06 { position:absolute; float:left;}
+#p07 { position:absolute; float:left;}
+#p08 { position:absolute; float:left;}
+#p09 { position:absolute; float:left;}
+#p10 { position:absolute; float:left;}
+#p11 { position:absolute; float:left;}
+#p12 { position:absolute; float:left;}
+#p13 { position:absolute; float:left;}
+#p14 { position:absolute; float:left;}
+#p15 { position:absolute; float:left;}
+#p16 { position:absolute; float:left;}
+#p17 { position:absolute; float:left;}
+#p18 { position:absolute; float:left;}
+#p19 { position:absolute; float:left;}
+#p20 { position:absolute; float:left;}
+#p21 { position:absolute; float:left;}
+#p22 { position:absolute; float:left;}
+#p23 { position:absolute; float:left;}
+#p24 { position:absolute; float:left;}
+#p25 { position:absolute; float:left;}
+#p26 { position:absolute; float:left;}
+#p27 { position:absolute; float:left;}
+#p28 { position:absolute; float:left;}
+#p29 { position:absolute; float:left;}
+#p30 { position:absolute; float:left;}
+ 
+// @copyright wendy xiao ASP.NET&MVC demo on 6-10-2016 *@

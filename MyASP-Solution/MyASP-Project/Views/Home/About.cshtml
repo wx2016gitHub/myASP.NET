@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/MySource/css")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("myASP", "MyASPList", "MyASP")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="myAbout">
+        <div id="pretty1">
+            <img src="../../MySource/peacock1.jpg" />
+        </div>
+        <div id="pretty2">
+            <img src="../../MySource/peacock2.jpg" />
+        </div>
+        <audio autoplay>
+            <source src="../../MySource/Hello.mp3" type="audio/mp3" />
+        </audio>
+        <h3 class="text-center"><strong>My ASP.NET Design</strong><span>Wendy Xiao by June,2016</span></h3>
+        <h5 class="text-justify">
+            <br />
+            This demo is to demonstrate my understanding ASP.NET. I added a navigation bar named MyASP to verify the controller and Route configuration. MyASP is a controller. In controller directory, I added a controller file that is named MyAPSController.cs to handle data views, edit, detail, remove and also add an interface page in View directory. I also added a class file MyASPData.cs under the Models directory that includes a demo data set which also  uses the same database tables. The photoID field in this demo was designed to save a pID which is associated with a real picture that saves under directory MySource. I only made 30 photos(p01~p30) available. I created two files myCSS.css and myJquery.js under the directory MySource to demonstrate how ASP.NET bundles to the user defined CSS and JQquery files. I redesigned the Home page and About page to use my own layout and decoration. All the pictures are handled by JQuery codes. My designs are all based on the component of ASP.NET, bootstrap3, CSS, HTML and JQuery. The data is saved in an SQL database except the images. The purpose is to understand basic ASP.NET knowledge. The code base and tests were built in Visual Studio community 2015 and SQL server 2014.<br />
+        </h5>
+        <label class="btn btn-success">My reference websites:</label><br />
+        <h6 class="text-success">
+            https://mva.microsoft.com <br />
+            https://www.youtube.com/~ video with relative topics ~ <br />
+            http://asp.net <br />
+            http://learn.jquery.com <br />
+            and more relative documents on other public websites. Wendy by Jun,2016
+        </h6>
+    </div>
+    <audio autoplay>
+        <source src="../../MySource/Hello.mp3" type="audio/mp3" />
+    </audio>
+    <div id="picInBottom">
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/myJquery")
+</body>
+</html>
+
+@* @copyright wendy xiao ASP.NET&MVC demo on 6-11-2016  *@
